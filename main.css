@@ -3,6 +3,9 @@ img{
   height:auto;
   padding-bottom: none;
 }
+.head-img{
+  position: relative;
+}
 .intro{
   top:30%;
   left: 20%;
