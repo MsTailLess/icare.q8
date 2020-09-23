@@ -1,8 +1,7 @@
 .aboutcat{
-  border-radius: 50%;
-  shape-outside: circle(50%);
-  width: 300px;
-  height: 300px;
+  shape-outside:ellipse();
+  width: 50%;
+  height: 80%;
   float: left;
 }
 .about{
