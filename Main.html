@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="unowned.css">
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <div id="main">
+    <nav class="navbar navbar-expand-sm bg-success sticky-top text-success">
+        <a class="navbar-brand text-dark" href="#" class="brand-logo right">iCare</a>
+
+        <div class="dropdown ">
+          <button class="btn  d-xs-block d-sm-none d-md-none btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="dropdown-menu float-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item " href="#about"> About </a>
+            <a class="dropdown-item" href="#UnownedPet"> Adopt Me </a>
+            <a class="dropdown-item" href="#support"> Support Us </a>
+            <a class="dropdown-item" href="#contact"> Contact Us </a>
+          </div>
+        </div>
+        <div class="d-none d-sm-block">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#main">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About us</a>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#UnownedPet">Adopt Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="support.html">Support Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+    <div class="head-img">
+
+      <div class="intro text-success ">
+        <h1>Tagline tagline</h1>
+        <h3> tagline tagline</h3>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="about" class="about p-4 m-2 border rounded">
+  <h1 style="color:green;"> About Us </h1>
+  <img class="aboutcat" src="image/image00.png" alt="image/image00.png">
+    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+  </div>
+
+  <div id="UnownedPet" class="UnownedPet p-4 m-2 border rounded">
+      <h1 style="color:green;"> Unowned Pets </h1>
+      <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('cat')"> Cat</button>
+        <button class="btn" onclick="filterSelection('dog')"> Dog</button>
+        <button class="btn" onclick="filterSelection('other')"> Other</button>
+      </div>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column cat">
+          <div class="content">
+            <img src="image/cat00.png" alt="cat1" style="width:100%">
+            <div class="overlay">
+              <div class="feauture">Cat name <br/> Cat Feautures</div>
+            </div>
+          </div>
+        </div>
+        <div class="column cat">
+          <div class="content">
+          <img src="image/cat01.png" alt="cat2" style="width:100%">
+          <div class="overlay">
+            <div class="feauture">Cat name <br/> Cat Feautures</div>
+          </div>
+          </div>
+        </div>
+        <div class="column cat">
+          <div class="content">
+          <img src="image/cat02.png" alt="cat3" style="width:100%">
+          <div class="overlay">
+            <div class="feauture">Cat name <br/> Cat Feautures</div>
+          </div>
+          </div>
+        </div>
+
+        <div class="column dog">
+          <div class="content">
+            <img src="image/doggo00.png" alt="dog1" style="width:100%">
+            <div class="overlay">
+              <div class="feauture">Cat name <br/> Cat Feautures</div>
+            </div>
+          </div>
+        </div>
+        <div class="column dog">
+          <div class="content">
+          <img src="image/doggo01.png" alt="dog2" style="width:100%">
+          <div class="overlay">
+            <div class="feauture">Cat name <br/> Cat Feautures</div>
+          </div>
+          </div>
+        </div>
+        <div class="column dog">
+          <div class="content">
+          <img src="image/doggo02.png" alt="dog3" style="width:100%">
+          <div class="overlay">
+            <div class="feauture">Cat name <br/> Cat Feautures</div>
+          </div>
+          </div>
+        </div>
+
+        <div class="column other">
+          <div class="content">
+            <img src="image/Ham00.png" alt="ham1" style="width:100%">
+            <div class="overlay">
+              <div class="feauture">Cat name <br/> Cat Feautures</div>
+            </div>
+          </div>
+        </div>
+        <div class="column other">
+          <div class="content">
+          <img src="image/Ham01.png" alt="ham2" style="width:100%">
+          <div class="overlay">
+            <div class="feauture">Cat name <br/> Cat Feautures</div>
+          </div>
+          </div>
+        </div>
+        <div class="column other">
+          <div class="content">
+          <img src="image/Ham02.png" alt="ham2" style="width:100%">
+          <div class="overlay">
+            <div class="feauture">Cat name <br/> Cat Feautures</div>
+          </div>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+
+  </div>
+<div  id="contact" class="contact p-4 m-2 border rounded">
+  <h1 style="color: green;">Contact Form</h1>
+</br>
+<div class="container">
+<form action="/action_page.php">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" placeholder="Email Address" name="email">
+
+  <label for="City">City</label>
+  <select id="city" name="city">
+    <option value="Salmiya">Salmiya</option>
+    <option value="Rumaithiya">Rumaithiya</option>
+    <option value="Kuwait City">Kuwait City</option>
+  </select>
+
+  <label for="subject">Subject</label>
+  <textarea id="subject" name="subject" placeholder="Your Message.." style="height:200px"></textarea>
+  <button type="button"  class=" btn btn-success btn-lg active text-white" onclick="SendThis()">
+    <a class="text-white" href="mailto:salshaiart@gmail.com">Submit</a>
+</button>
+</form>
+</div>
+</div>
+
+
+<script>
+$(".head-img").css({ height: $(window).height() + "px" });
+
+$(window).on("resize", function()
+ {
+$(".head-img").css({ height: $(window).height() + "px" });
+});
+
+    function toggleFunction() {
+    var x = document.getElementById("nav1");
+      x.classList.toggle("about");
+    }
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+</script>
+
+</body>
+</html>

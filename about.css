@@ -1,0 +1,11 @@
+.aboutcat{
+  border-radius: 50%;
+  shape-outside: circle(50%);
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+.about{
+  display: block;
+  align: left;
+}

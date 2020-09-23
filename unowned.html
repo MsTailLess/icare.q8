@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  position: relative;
+  background-color: white;
+  padding: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: lightgreen;
+}
+
+.content:hover .overlay {
+  opacity: 1;
+}
+
+.feauture {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Adopt Me!</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cat')"> Cat</button>
+  <button class="btn" onclick="filterSelection('dog')"> Dog</button>
+  <button class="btn" onclick="filterSelection('other')"> Other</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column cat">
+    <div class="content">
+      <img src="image/cat00.png" alt="cat1" style="width:100%">
+      <div class="overlay">
+        <div class="feauture">Cat name <br/> Cat Feautures</div>
+      </div>
+    </div>
+  </div>
+  <div class="column cat">
+    <div class="content">
+    <img src="image/cat01.png" alt="cat2" style="width:100%">
+    <div class="overlay">
+      <div class="feauture">Cat name <br/> Cat Feautures</div>
+    </div>
+    </div>
+  </div>
+  <div class="column cat">
+    <div class="content">
+    <img src="image/cat02.png" alt="cat3" style="width:100%">
+    <div class="overlay">
+      <div class="feauture">Cat name <br/> Cat Feautures</div>
+    </div>
+    </div>
+  </div>
+
+  <div class="column dog">
+    <div class="content">
+      <img src="image/doggo00.png" alt="dog1" style="width:100%">
+      <div class="overlay">
+        <div class="feauture">Cat name <br/> Cat Feautures</div>
+      </div>
+    </div>
+  </div>
+  <div class="column dog">
+    <div class="content">
+    <img src="image/doggo01.png" alt="dog2" style="width:100%">
+    <div class="overlay">
+      <div class="feauture">Cat name <br/> Cat Feautures</div>
+    </div>
+    </div>
+  </div>
+  <div class="column dog">
+    <div class="content">
+    <img src="image/doggo02.png" alt="dog3" style="width:100%">
+    <div class="overlay">
+      <div class="feauture">Cat name <br/> Cat Feautures</div>
+    </div>
+    </div>
+  </div>
+
+  <div class="column other">
+    <div class="content">
+      <img src="image/Ham00.png" alt="ham1" style="width:100%">
+      <div class="overlay">
+        <div class="feauture">Cat name <br/> Cat Feautures</div>
+      </div>
+    </div>
+  </div>
+  <div class="column other">
+    <div class="content">
+    <img src="image/Ham01.png" alt="ham2" style="width:100%">
+    <div class="overlay">
+      <div class="feauture">Cat name <br/> Cat Feautures</div>
+    </div>
+    </div>
+  </div>
+  <div class="column other">
+    <div class="content">
+    <img src="image/Ham02.png" alt="ham2" style="width:100%">
+    <div class="overlay">
+      <div class="feauture">Cat name <br/> Cat Feautures</div>
+    </div>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
